@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is my text!</h1>
+</body>
+<script>
+    (function () {
+        const header = document.querySelector('h1');
+        header.style.color = 'red';
+        document.querySelector('body').addEventListener('click', function () {
+            header.style.color = 'blue';
+        });
+    })();
+
+    // Vì đây là hàm IIFE lên lần đầu tiên vào trang sẽ tự gọi hàm và đổi màu h1 sang đỏ và khi click vào thẻ body thì sẽ thay đổi màu h1 sang xanh. 
+</script>
+
+</html>
